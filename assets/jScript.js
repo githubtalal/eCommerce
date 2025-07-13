@@ -124,7 +124,6 @@ function tagTheFavouriteProducts() {
             }
         })
     }
-    
 }
 
 function addToFavouriteId(product_id) {
