@@ -116,11 +116,10 @@ window.onload = function () {
 function tagTheFavouriteProducts() {
     let favProductIds = JSON.parse(localStorage.getItem('favouriteProductIds'))
     if (favProductIds !== null) {
-        document.querySelectorAll("svg.bi-heart").forEach(function (elem, index, arr) {
+        document.querySelectorAll("svg.bi-heart-fill").forEach(function (elem, index, arr) {
             if (favProductIds.includes(elem.id.split('-')[1])) {
-                elem.classList.add('d-none')
-            } else {
-                document.getElementById(`favIcon-${elem.id.split('-')[1]}`).classList.add('d-none')
+                elem.classList.remove('d-none')
+                document.getElementById(`notFavIcon-${elem.id.split('-')[1]}`).classList.add('d-none')
             }
         })
     }
