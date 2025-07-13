@@ -268,9 +268,10 @@ function retrivePorductsIntoFirstSection() {
 function retriveProductIntoSecondCartSection() {
     product_ids = JSON.parse(localStorage.getItem('productIds'))
     cartProducts = ''
-    product_ids.forEach(function (elem, index, arr) {
-        let product = JSON.parse(localStorage.getItem(elem))
-        cartProducts += `<div class='d-flex align-items-center' style="margin-bottom: 20px; border-bottom: 1px solid #bfb5b5; padding-bottom: 30px;" id="prod-${elem}">
+    if (product_ids !== null) {
+        product_ids.forEach(function (elem, index, arr) {
+            let product = JSON.parse(localStorage.getItem(elem))
+            cartProducts += `<div class='d-flex align-items-center' style="margin-bottom: 20px; border-bottom: 1px solid #bfb5b5; padding-bottom: 30px;" id="prod-${elem}">
                         <div style="height: auto; width: auto; margin-right: 6px;">
                             <img src='${product.prodImgSrc}' alt='' style="height: 120px; width: 120px; object-fit: containt !important;"/> 
                         </div>   
@@ -289,7 +290,9 @@ function retriveProductIntoSecondCartSection() {
                             </div>
                         </div>
                      </div>`
-    })
+        })
+    }
+    
 
     document.querySelector(".personal-info .order-summary .products").innerHTML = cartProducts
 
