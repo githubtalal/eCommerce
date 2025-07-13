@@ -369,10 +369,14 @@ body {
         flex-wrap: wrap;
     }
 
-    .blog-section .article-card {
-        width: 100%;
-        margin-bottom: 20px;
-    }
+        .blog-section > div:last-of-type > * {
+            width: 100%;
+        }
+
+        .blog-section .article-card {
+            width: 100%;
+            margin-bottom: 20px;
+        }
 
         .blog-section .article-card img {
             width: 100%;
