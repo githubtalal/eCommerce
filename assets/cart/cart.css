@@ -295,14 +295,12 @@
         }
 
     .cart > div:nth-child(4) .products {
-        gap: 10px;
         flex-wrap: wrap;
-        width: fit-content;
-        margin-left: 30%;
     }
 
         .cart > div:nth-child(4) .products > div {
             position: relative;
+            margin-right: 10px;
         }
 
         .cart > div:nth-child(4) .products span {
