@@ -322,9 +322,12 @@ function retriveProductIntoSecondCartSection() {
 
 function adjustPorductsTotalAndSubtotalInOrderSummary() {
     let total = 0
-    JSON.parse(localStorage.getItem('productIds')).forEach(function (elem, index, arr) {
-        total += parseFloat(document.getElementById(`orderPrice-${elem}`).textContent.slice(1))
-    })
+    if (JSON.parse(localStorage.getItem('productIds')) !== null) {
+        JSON.parse(localStorage.getItem('productIds')).forEach(function (elem, index, arr) {
+            total += parseFloat(document.getElementById(`orderPrice-${elem}`).textContent.slice(1))
+        })
+    }
+
 
     document.querySelector(".order-summary > div:nth-child(6) h5").textContent = '$' + total
     document.querySelector(".order-summary > div:nth-child(7) h4:last-of-type").textContent = '$' + total
