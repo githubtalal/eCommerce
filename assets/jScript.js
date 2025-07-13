@@ -115,13 +115,16 @@ window.onload = function () {
 
 function tagTheFavouriteProducts() {
     let favProductIds = JSON.parse(localStorage.getItem('favouriteProductIds'))
-    document.querySelectorAll("svg.bi-heart").forEach(function (elem, index, arr) {
-        if (favProductIds.includes(elem.id.split('-')[1])) {
-            elem.classList.add('d-none')
-        } else {
-            document.getElementById(`favIcon-${elem.id.split('-')[1]}`).classList.add('d-none')
-        }
-    })
+    if (favProductIds.length !== 0) {
+        document.querySelectorAll("svg.bi-heart").forEach(function (elem, index, arr) {
+            if (favProductIds.includes(elem.id.split('-')[1])) {
+                elem.classList.add('d-none')
+            } else {
+                document.getElementById(`favIcon-${elem.id.split('-')[1]}`).classList.add('d-none')
+            }
+        })
+    }
+    
 }
 
 function addToFavouriteId(product_id) {
