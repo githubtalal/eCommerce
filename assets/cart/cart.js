@@ -147,16 +147,16 @@ if (document.querySelector(".cart .cart-detail.active .product-list") !== null) 
 function typeTheHeadAndDescMsgSmoothly() {
     let thankMessage = 'Thank you! 🎉'
     let descMessage = 'Your order has been received'
-    let i = 0
+    let counterLimit = 0
     let typingThankMsg = setInterval(() => {
-        document.querySelector('.cart > div:nth-child(4).active h5').textContent = thankMessage.slice(0, i++)
+        document.querySelector('.cart > div:nth-child(4).active h5').textContent = thankMessage.slice(0, counterLimit++)
         // if fulfilled the whole text clear the interval and type description text
-        if (i > thankMessage.length) {
+        if (counterLimit > thankMessage.length) {
             clearInterval(typingThankMsg)
-            i = 0
+            counterLimit = 0
             let DescriptionMsg = setInterval(() => {
-                document.querySelector('.cart > div:nth-child(4) h1').textContent = descMessage.slice(0, i++)
-                if (i > descMessage.length) {
+                document.querySelector('.cart > div:nth-child(4) h1').textContent = descMessage.slice(0, counterLimit++)
+                if (counterLimit > descMessage.length) {
                     clearInterval(DescriptionMsg)
                 }
             }, 100)
