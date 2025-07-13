@@ -330,9 +330,12 @@ function adjustPorductsTotalAndSubtotalInOrderSummary() {
 
 function adjustPorductsTotalAndSubtotalInCartList() {
     let total = 0
-    JSON.parse(localStorage.getItem('productIds')).forEach(function (elem, index, arr) {
-        total += parseFloat(document.getElementById(elem).lastChild.innerHTML.slice(1))
-    })
+    if (JSON.parse(localStorage.getItem('productIds')) !== null) {
+        JSON.parse(localStorage.getItem('productIds')).forEach(function (elem, index, arr) {
+            total += parseFloat(document.getElementById(elem).lastChild.innerHTML.slice(1))
+        })
+    }
+
 
     document.querySelector(".cart-detail .cart-summary > div:nth-child(5) span:last-of-type").textContent = '$' + total
     document.querySelector(".cart-detail .cart-summary > div:nth-child(6) h5:last-of-type").textContent = '$' + total
