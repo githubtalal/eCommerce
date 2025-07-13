@@ -1,0 +1,341 @@
+﻿<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Furniture</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="package/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/home1Style.css" />
+    <link rel="stylesheet" href="assets/myAccount/myAccount.css" />
+    <link rel="stylesheet" href="bootstrap-5.3.6-dist\css\bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap-5.3.6-dist\css\bootstrap.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href="assets/images/Vector.png" />
+</head>
+<body>
+    <div class="navigation-bar">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container container-fluid">
+                <a class="navbar-brand" href="#"><h4>3legant.</h4></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h4 class="offcanvas-title" id="offcanvasNavbarLabel">3legant.</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body d-flex justify-content-between align-items-center">
+                        <div class="input-search d-none">
+                            <input type="search" placeholder="Search" />
+                            <img src="assets/images/zoom.png" alt="" />
+                        </div>
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="home1.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="shop1.html">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="product.html">Product</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contactUs.html">Contact Us</a>
+                            </li>
+                        </ul>
+                        <div class="nav-icons d-flex justify-content-between">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.5 18.5L22 22M21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21C16.7467 21 21 16.7467 21 11.5Z" stroke="#141718" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <a href="myAccount.html">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.5588 19.5488C17.5654 16.8918 15.0036 15 12 15C8.99638 15 6.4346 16.8918 5.44117 19.5488M18.5588 19.5488C20.6672 17.7154 22 15.0134 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 15.0134 3.33285 17.7154 5.44117 19.5488M18.5588 19.5488C16.8031 21.0756 14.5095 22 12 22C9.49052 22 7.19694 21.0756 5.44117 19.5488M15 9C15 10.6569 13.6569 12 12 12C10.3431 12 9 10.6569 9 9C9 7.34315 10.3431 6 12 6C13.6569 6 15 7.34315 15 9Z" stroke="#141718" stroke-width="1.5" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+
+                        </div>
+                        <div class="d-none">
+                            <div>
+                                <input type="text" placeholder="Cart" />
+                                <div class="icons d-flex justify-content-between align-items-center">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 6L9 7C9 8.65685 10.3431 10 12 10C13.6569 10 15 8.65685 15 7V6" stroke="#141718" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M15.6115 3H8.38851C6.43316 3 4.7644 4.41365 4.44294 6.3424L2.77627 16.3424C2.36992 18.7805 4.25009 21 6.72185 21H17.2782C19.7499 21 21.6301 18.7805 21.2237 16.3424L19.5571 6.3424C19.2356 4.41365 17.5669 3 15.6115 3Z" stroke="#141718" stroke-width="1.5" stroke-linejoin="round" />
+                                    </svg>
+                                    <span class="prod-num">0</span>
+                                </div>
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Wishlist" />
+                                <div class="icons d-flex justify-content-between align-items-center">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6924 7.58373C12.3055 7.95505 11.6945 7.95505 11.3076 7.58373L10.6152 6.91927C9.80477 6.14154 8.70994 5.66667 7.5 5.66667C5.01472 5.66667 3 7.68139 3 10.1667C3 12.5493 4.28979 14.5167 6.15176 16.1332C8.01532 17.7511 10.2434 18.8241 11.5746 19.3717C11.853 19.4862 12.147 19.4862 12.4254 19.3717C13.7566 18.8241 15.9847 17.7511 17.8482 16.1332C19.7102 14.5167 21 12.5493 21 10.1667C21 7.68139 18.9853 5.66667 16.5 5.66667C15.2901 5.66667 14.1952 6.14154 13.3848 6.91927L12.6924 7.58373ZM12 5.47624C10.8321 4.35548 9.24649 3.66667 7.5 3.66667C3.91015 3.66667 1 6.57682 1 10.1667C1 16.5349 7.97034 20.0517 10.8138 21.2214C11.5796 21.5364 12.4204 21.5364 13.1862 21.2214C16.0297 20.0517 23 16.5349 23 10.1667C23 6.57682 20.0899 3.66667 16.5 3.66667C14.7535 3.66667 13.1679 4.35548 12 5.47624Z" fill="#141718" />
+                                    </svg>
+                                    <span class="prod-num">0</span>
+                                </div>
+                            </div>
+                            <a href="signIn.html">Sign In</a>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="2" y="2" width="20" height="20" rx="4" stroke="#141718" stroke-width="1.5" />
+                                    <circle cx="18" cy="6" r="1" fill="#141718" />
+                                    <circle cx="12" cy="12" r="5" stroke="#141718" stroke-width="1.5" />
+                                </svg>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 3H15C12.2386 3 10 5.23858 10 8V10H6V14H10V21H14V14H18V10H14V8C14 7.44772 14.4477 7 15 7H18V3Z" stroke="#141718" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="2" y="3" width="20" height="18" rx="4" stroke="#141718" stroke-width="1.5" />
+                                    <path d="M10.4472 8.72361L15.2111 11.1056C15.9482 11.4741 15.9482 12.5259 15.2111 12.8944L10.4472 15.2764C9.78231 15.6088 9 15.1253 9 14.382V9.61803C9 8.87465 9.78231 8.39116 10.4472 8.72361Z" stroke="#141718" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <button type="button" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvasRight" aria-controls="offcanvasRight" class="bg-transparent border border-0" id="cartIcon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 6L9 7C9 8.65685 10.3431 10 12 10C13.6569 10 15 8.65685 15 7V6" stroke="#141718" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M15.6115 3H8.38851C6.43316 3 4.7644 4.41365 4.44294 6.3424L2.77627 16.3424C2.36992 18.7805 4.25009 21 6.72185 21H17.2782C19.7499 21 21.6301 18.7805 21.2237 16.3424L19.5571 6.3424C19.2356 4.41365 17.5669 3 15.6115 3Z" stroke="#141718" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <span class="prod-num">0</span>
+                </div>
+            </div>
+
+        </nav>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Cart</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="offcanvas-products" style="margin-bottom: 50px;">
+                </div>
+                <div class="d-flex justify-content-between align-items-center subtotal">
+                    <p>Subtotal</p>
+                    <h5></h5>
+                </div>
+                <div class="d-flex justify-content-between align-items-center total">
+                    <h4>Total</h4>
+                    <h4></h4>
+                </div>
+                <button class="checkout">Checkout</button>
+                <div class="view-cart">
+                    <a href="cart.html">View Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 class="text-center">My Account</h1>
+    <div class="container d-flex mb-5">
+        <div class="account-menu">
+            <div class="text-center">
+                <img src="assets/images/accountLogo.jpg" alt="" />
+                <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.75" y="1.25" width="28.5" height="28.5" rx="14.25" fill="#141718" />
+                    <rect x="0.75" y="1.25" width="28.5" height="28.5" rx="14.25" stroke="white" stroke-width="1.5" />
+                    <path d="M11.2513 11.2226C11.0981 11.4524 11.1602 11.7628 11.39 11.916C11.6197 12.0692 11.9302 12.0071 12.0833 11.7774L11.2513 11.2226ZM12.6048 10.0937L13.0209 10.3711V10.3711L12.6048 10.0937ZM17.3965 10.0937L17.8125 9.81638L17.3965 10.0937ZM17.918 11.7774C18.0711 12.0071 18.3816 12.0692 18.6113 11.916C18.8411 11.7628 18.9032 11.4524 18.75 11.2226L17.918 11.7774ZM16.5007 16.5C16.5007 17.3284 15.8291 18 15.0007 18V19C16.3814 19 17.5007 17.8807 17.5007 16.5H16.5007ZM15.0007 18C14.1722 18 13.5007 17.3284 13.5007 16.5H12.5007C12.5007 17.8807 13.6199 19 15.0007 19V18ZM13.5007 16.5C13.5007 15.6716 14.1722 15 15.0007 15V14C13.6199 14 12.5007 15.1193 12.5007 16.5H13.5007ZM15.0007 15C15.8291 15 16.5007 15.6716 16.5007 16.5H17.5007C17.5007 15.1193 16.3814 14 15.0007 14V15ZM12.0833 11.7774L13.0209 10.3711L12.1888 9.81638L11.2513 11.2226L12.0833 11.7774ZM13.7142 10H16.2871V9H13.7142V10ZM16.9804 10.3711L17.918 11.7774L18.75 11.2226L17.8125 9.81638L16.9804 10.3711ZM16.2871 10C16.5657 10 16.8259 10.1393 16.9804 10.3711L17.8125 9.81638C17.4725 9.30635 16.9001 9 16.2871 9V10ZM13.0209 10.3711C13.1754 10.1393 13.4356 10 13.7142 10V9C13.1012 9 12.5288 9.30635 12.1888 9.81638L13.0209 10.3711ZM11.0007 12H19.0007V11H11.0007V12ZM21.1673 14.1667V18.8333H22.1673V14.1667H21.1673ZM19.0007 21H11.0007V22H19.0007V21ZM8.83398 18.8333V14.1667H7.83398V18.8333H8.83398ZM11.0007 21C9.80403 21 8.83398 20.03 8.83398 18.8333H7.83398C7.83398 20.5822 9.25175 22 11.0007 22V21ZM21.1673 18.8333C21.1673 20.03 20.1973 21 19.0007 21V22C20.7496 22 22.1673 20.5822 22.1673 18.8333H21.1673ZM19.0007 12C20.1973 12 21.1673 12.97 21.1673 14.1667H22.1673C22.1673 12.4178 20.7496 11 19.0007 11V12ZM11.0007 11C9.25175 11 7.83398 12.4178 7.83398 14.1667H8.83398C8.83398 12.97 9.80403 12 11.0007 12V11Z" fill="#FEFEFE" />
+                </svg>
+                <h3>Sofia Havertz</h3>
+            </div>
+            <select class="form-select" aria-label="Default select example">
+                <option value="account">Account</option>
+                <option value="address">Address</option>
+                <option value="orders">Orders</option>
+                <option value="wishlist">Wishlist</option>
+                <option value="logout">Log out</option>
+            </select>
+            <div class="account-list">
+                <span class="active" data-target="account">Account</span>
+                <span data-target="address">Address</span>
+                <span data-target="orders">Orders</span>
+                <span data-target="wishlist">Wishlist</span>
+                <span><a href="signIn.html">Log out</a></span>
+            </div>
+        </div>
+        <div class="account account-details active">
+            <h3>Account Details</h3>
+            <div class="row">
+                <div class="mb-3 col-12">
+                    <label for="fName" class="form-label">FIRST NAME</label>
+                    <input type="text" class="form-control" id="fName" placeholder="First name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="mb-3 col-12">
+                    <label for="lName" class="form-label">LAST NAME</label>
+                    <input type="text" class="form-control" id="lName" placeholder="Last name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="mb-3 col-12">
+                    <label for="dName" class="form-label">DISPLAY NAME</label>
+                    <input type="text" class="form-control" id="dName" placeholder="Display name">
+                </div>
+                <span>This will be how your name will displyed in the account section and in reviews</span>
+            </div>
+            <div class="row">
+                <div class="mb-3 col-12">
+                    <label for="email" class="form-label">EMAIL</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+            </div>
+            <h3>Password</h3>
+            <div class="row">
+                <div class="mb-3 col-12">
+                    <label for="oPassword" class="form-label">OLD PASSWORD</label>
+                    <input type="password" class="form-control" id="oPassword" placeholder="Old password">
+                </div>
+            </div>
+            <div class="row">
+                <div class="mb-3 col-12">
+                    <label for="nPassword" class="form-label">NEW PASSWORD</label>
+                    <input type="password" class="form-control" id="nPassword" placeholder="New password">
+                </div>
+            </div>
+            <div class="row">
+                <div class="mb-3 col-12">
+                    <label for="rNPassword" class="form-label">REPEAT NEW PASSWORD</label>
+                    <input type="password" class="form-control" id="rNPassword" placeholder="Repeat new password">
+                </div>
+            </div>
+            <button>Save changes</button>
+        </div>
+        <div class="address account-details">
+            <h3>Address</h3>
+            <div class="d-flex align-items-center">
+                <div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5>Billing Address</h5>
+                        <svg width="51" height="27" viewBox="0 0 51 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 19.5H14M9.18961 9.04114C9.18961 9.04114 9.18961 10.1309 10.2794 11.2206C11.3691 12.3104 12.4589 12.3104 12.4589 12.3104M4.87975 17.492L7.16823 17.1651C7.49833 17.118 7.80424 16.965 8.04003 16.7292L13.5486 11.2206C14.1505 10.6188 14.1505 9.64299 13.5486 9.04114L12.4589 7.95139C11.857 7.34954 10.8812 7.34954 10.2794 7.95139L4.77078 13.46C4.53499 13.6958 4.38203 14.0017 4.33488 14.3318L4.00795 16.6202C3.9353 17.1288 4.3712 17.5647 4.87975 17.492Z" stroke="#6C7275" stroke-width="1.5" stroke-linecap="round" />
+                            <path d="M21.1477 19.5V7.86364H28.7159V9.63068H23.2557V12.7898H28.3239V14.5568H23.2557V17.733H28.7614V19.5H21.1477ZM34.0142 19.6534C33.3286 19.6534 32.715 19.4773 32.1733 19.125C31.6316 18.7727 31.2036 18.2614 30.8892 17.5909C30.5748 16.9205 30.4176 16.1061 30.4176 15.1477C30.4176 14.178 30.5767 13.3598 30.8949 12.6932C31.2169 12.0227 31.6506 11.517 32.196 11.1761C32.7415 10.8314 33.3494 10.6591 34.0199 10.6591C34.5313 10.6591 34.9517 10.7462 35.2812 10.9205C35.6108 11.0909 35.8722 11.2973 36.0653 11.5398C36.2585 11.7784 36.4081 12.0038 36.5142 12.2159H36.5994V7.86364H38.6619V19.5H36.6392V18.125H36.5142C36.4081 18.3371 36.2547 18.5625 36.054 18.8011C35.8532 19.036 35.5881 19.2367 35.2585 19.4034C34.929 19.5701 34.5142 19.6534 34.0142 19.6534ZM34.5881 17.9659C35.0237 17.9659 35.3949 17.8485 35.7017 17.6136C36.0085 17.375 36.2415 17.0436 36.4006 16.6193C36.5597 16.1951 36.6392 15.7008 36.6392 15.1364C36.6392 14.572 36.5597 14.0814 36.4006 13.6648C36.2453 13.2481 36.0142 12.9242 35.7074 12.6932C35.4044 12.4621 35.0313 12.3466 34.5881 12.3466C34.1297 12.3466 33.7472 12.4659 33.4403 12.7045C33.1335 12.9432 32.9025 13.2727 32.7472 13.6932C32.5919 14.1136 32.5142 14.5947 32.5142 15.1364C32.5142 15.6818 32.5919 16.1686 32.7472 16.5966C32.9063 17.0208 33.1392 17.3561 33.446 17.6023C33.7566 17.8447 34.1373 17.9659 34.5881 17.9659ZM40.8537 19.5V10.7727H42.9105V19.5H40.8537ZM41.8878 9.53409C41.562 9.53409 41.2817 9.42614 41.0469 9.21023C40.812 8.99053 40.6946 8.72727 40.6946 8.42045C40.6946 8.10985 40.812 7.84659 41.0469 7.63068C41.2817 7.41098 41.562 7.30114 41.8878 7.30114C42.2173 7.30114 42.4976 7.41098 42.7287 7.63068C42.9635 7.84659 43.081 8.10985 43.081 8.42045C43.081 8.72727 42.9635 8.99053 42.7287 9.21023C42.4976 9.42614 42.2173 9.53409 41.8878 9.53409ZM49.3835 10.7727V12.3636H44.3665V10.7727H49.3835ZM45.6051 8.68182H47.6619V16.875C47.6619 17.1515 47.7036 17.3636 47.7869 17.5114C47.8741 17.6553 47.9877 17.7538 48.1278 17.8068C48.268 17.8598 48.4233 17.8864 48.5938 17.8864C48.7225 17.8864 48.84 17.8769 48.946 17.858C49.0559 17.839 49.1392 17.822 49.196 17.8068L49.5426 19.4148C49.4328 19.4527 49.2756 19.4943 49.071 19.5398C48.8703 19.5852 48.6241 19.6117 48.3324 19.6193C47.8172 19.6345 47.3532 19.5568 46.9403 19.3864C46.5275 19.2121 46.1998 18.9432 45.9574 18.5795C45.7188 18.2159 45.6013 17.7614 45.6051 17.2159V8.68182Z" fill="#6C7275" />
+                        </svg>
+                    </div>
+                    <span>Sofia Havertz</span>
+                    <p>(+1) 234 567 890</p>
+                    <p>345 Long Island, NewYork, United States</p>
+                </div>
+                <div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5>Shipping Address</h5>
+                        <svg width="51" height="27" viewBox="0 0 51 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 19.5H14M9.18961 9.04114C9.18961 9.04114 9.18961 10.1309 10.2794 11.2206C11.3691 12.3104 12.4589 12.3104 12.4589 12.3104M4.87975 17.492L7.16823 17.1651C7.49833 17.118 7.80424 16.965 8.04003 16.7292L13.5486 11.2206C14.1505 10.6188 14.1505 9.64299 13.5486 9.04114L12.4589 7.95139C11.857 7.34954 10.8812 7.34954 10.2794 7.95139L4.77078 13.46C4.53499 13.6958 4.38203 14.0017 4.33488 14.3318L4.00795 16.6202C3.9353 17.1288 4.3712 17.5647 4.87975 17.492Z" stroke="#6C7275" stroke-width="1.5" stroke-linecap="round" />
+                            <path d="M21.1477 19.5V7.86364H28.7159V9.63068H23.2557V12.7898H28.3239V14.5568H23.2557V17.733H28.7614V19.5H21.1477ZM34.0142 19.6534C33.3286 19.6534 32.715 19.4773 32.1733 19.125C31.6316 18.7727 31.2036 18.2614 30.8892 17.5909C30.5748 16.9205 30.4176 16.1061 30.4176 15.1477C30.4176 14.178 30.5767 13.3598 30.8949 12.6932C31.2169 12.0227 31.6506 11.517 32.196 11.1761C32.7415 10.8314 33.3494 10.6591 34.0199 10.6591C34.5313 10.6591 34.9517 10.7462 35.2812 10.9205C35.6108 11.0909 35.8722 11.2973 36.0653 11.5398C36.2585 11.7784 36.4081 12.0038 36.5142 12.2159H36.5994V7.86364H38.6619V19.5H36.6392V18.125H36.5142C36.4081 18.3371 36.2547 18.5625 36.054 18.8011C35.8532 19.036 35.5881 19.2367 35.2585 19.4034C34.929 19.5701 34.5142 19.6534 34.0142 19.6534ZM34.5881 17.9659C35.0237 17.9659 35.3949 17.8485 35.7017 17.6136C36.0085 17.375 36.2415 17.0436 36.4006 16.6193C36.5597 16.1951 36.6392 15.7008 36.6392 15.1364C36.6392 14.572 36.5597 14.0814 36.4006 13.6648C36.2453 13.2481 36.0142 12.9242 35.7074 12.6932C35.4044 12.4621 35.0313 12.3466 34.5881 12.3466C34.1297 12.3466 33.7472 12.4659 33.4403 12.7045C33.1335 12.9432 32.9025 13.2727 32.7472 13.6932C32.5919 14.1136 32.5142 14.5947 32.5142 15.1364C32.5142 15.6818 32.5919 16.1686 32.7472 16.5966C32.9063 17.0208 33.1392 17.3561 33.446 17.6023C33.7566 17.8447 34.1373 17.9659 34.5881 17.9659ZM40.8537 19.5V10.7727H42.9105V19.5H40.8537ZM41.8878 9.53409C41.562 9.53409 41.2817 9.42614 41.0469 9.21023C40.812 8.99053 40.6946 8.72727 40.6946 8.42045C40.6946 8.10985 40.812 7.84659 41.0469 7.63068C41.2817 7.41098 41.562 7.30114 41.8878 7.30114C42.2173 7.30114 42.4976 7.41098 42.7287 7.63068C42.9635 7.84659 43.081 8.10985 43.081 8.42045C43.081 8.72727 42.9635 8.99053 42.7287 9.21023C42.4976 9.42614 42.2173 9.53409 41.8878 9.53409ZM49.3835 10.7727V12.3636H44.3665V10.7727H49.3835ZM45.6051 8.68182H47.6619V16.875C47.6619 17.1515 47.7036 17.3636 47.7869 17.5114C47.8741 17.6553 47.9877 17.7538 48.1278 17.8068C48.268 17.8598 48.4233 17.8864 48.5938 17.8864C48.7225 17.8864 48.84 17.8769 48.946 17.858C49.0559 17.839 49.1392 17.822 49.196 17.8068L49.5426 19.4148C49.4328 19.4527 49.2756 19.4943 49.071 19.5398C48.8703 19.5852 48.6241 19.6117 48.3324 19.6193C47.8172 19.6345 47.3532 19.5568 46.9403 19.3864C46.5275 19.2121 46.1998 18.9432 45.9574 18.5795C45.7188 18.2159 45.6013 17.7614 45.6051 17.2159V8.68182Z" fill="#6C7275" />
+                        </svg>
+                    </div>
+                    <span>Sofia Havertz</span>
+                    <p>(+1) 234 567 890</p>
+                    <p>345 Long Island, NewYork, United States</p>
+                </div>
+            </div>
+        </div>
+        <div class="orders account-details">
+            <h3>Orders History</h3>
+            <div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Number ID</th>
+                            <th scope="col">Dates</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <td data-label="Number ID">#3456_768</td>
+                            <td data-label="Dates">October 17, 2023</td>
+                            <td data-label="Status">Delivered</td>
+                            <td data-label="Price">$1234.00</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Number ID">#3456_980</td>
+                            <td data-label="Dates">October 11, 2023</td>
+                            <td data-label="Status">Delivered</td>
+                            <td data-label="Price">$345.00</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Number ID">#3456_120</td>
+                            <td data-label="Dates">August 24, 2023</td>
+                            <td data-label="Status">Delivered</td>
+                            <td data-label="Price">$2345.00</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Number ID">#3456_030</td>
+                            <td data-label="Dates">August 12, 2023</td>
+                            <td data-label="Status">Delivered</td>
+                            <td data-label="Price">$845.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <div class="wishlist account-details">
+            <h3>Your Wishlist</h3>
+            <div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Product</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center footer-content">
+                <div class="d-flex align-items-center">
+                    <h4>3legant.</h4>
+                    <span>|</span>
+                    <p>Gift & Decoration Store</p>
+                </div>
+                <div class="d-flex align-items-center">
+                    <div><a href="home1.html">Home</a></div>
+                    <div><a href="shop1.html">Shop</a></div>
+                    <div><a href="product.html">Product</a></div>
+                    <div><a href="blog.html">Blog</a></div>
+                    <div><a href="contactUs.html">Contact Us</a></div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center bottom-bar">
+                <div class="d-flex align-items-center">
+                    <p>Copyright � 2023 3legant. All rights reserved</p>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+                <div class="d-flex align-items-center">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2" y="2" width="20" height="20" rx="4" stroke="#FEFEFE" stroke-width="1.5" />
+                        <circle cx="18" cy="6" r="1" fill="#FEFEFE" />
+                        <circle cx="12" cy="12" r="5" stroke="#FEFEFE" stroke-width="1.5" />
+                    </svg>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 3H15C12.2386 3 10 5.23858 10 8V10H6V14H10V21H14V14H18V10H14V8C14 7.44772 14.4477 7 15 7H18V3Z" stroke="#FEFEFE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2" y="3" width="20" height="18" rx="4" stroke="#FEFEFE" stroke-width="1.5" />
+                        <path d="M10.4472 8.72361L15.2111 11.1056C15.9482 11.4741 15.9482 12.5259 15.2111 12.8944L10.4472 15.2764C9.78231 15.6088 9 15.1253 9 14.382V9.61803C9 8.87465 9.78231 8.39116 10.4472 8.72361Z" stroke="#FEFEFE" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="bootstrap-5.3.6-dist\js\bootstrap.bundle.min.js"></script>
+    <script src="bootstrap-5.3.6-dist\js\bootstrap.bundle.js"></script>
+    <script src="assets/jScript.js"></script>
+    <script src="assets/myAccount/myAccount.js"></script>
+</body>
+</html>

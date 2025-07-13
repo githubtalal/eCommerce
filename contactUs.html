@@ -1,0 +1,287 @@
+﻿<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Furniture</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="package/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/home1Style.css" />
+    <link rel="stylesheet" href="assets/contactUs/contactUs.css" />
+    <link rel="stylesheet" href="bootstrap-5.3.6-dist\css\bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap-5.3.6-dist\css\bootstrap.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href="assets/images/Vector.png" />
+</head>
+<body>
+    <div class="navigation-bar">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container container-fluid">
+                <a class="navbar-brand" href="#"><h4>3legant.</h4></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h4 class="offcanvas-title" id="offcanvasNavbarLabel">3legant.</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body d-flex justify-content-between align-items-center">
+                        <div class="input-search d-none">
+                            <input type="search" placeholder="Search" />
+                            <img src="assets/images/zoom.png" alt="" />
+                        </div>
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="home1.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="shop1.html">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="product.html">Product</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                        <div class="nav-icons d-flex justify-content-between">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.5 18.5L22 22M21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21C16.7467 21 21 16.7467 21 11.5Z" stroke="#141718" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <a href="myAccount.html">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.5588 19.5488C17.5654 16.8918 15.0036 15 12 15C8.99638 15 6.4346 16.8918 5.44117 19.5488M18.5588 19.5488C20.6672 17.7154 22 15.0134 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 15.0134 3.33285 17.7154 5.44117 19.5488M18.5588 19.5488C16.8031 21.0756 14.5095 22 12 22C9.49052 22 7.19694 21.0756 5.44117 19.5488M15 9C15 10.6569 13.6569 12 12 12C10.3431 12 9 10.6569 9 9C9 7.34315 10.3431 6 12 6C13.6569 6 15 7.34315 15 9Z" stroke="#141718" stroke-width="1.5" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="d-none">
+                            <div>
+                                <input type="text" placeholder="Cart" />
+                                <div class="icons d-flex justify-content-between align-items-center">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 6L9 7C9 8.65685 10.3431 10 12 10C13.6569 10 15 8.65685 15 7V6" stroke="#141718" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M15.6115 3H8.38851C6.43316 3 4.7644 4.41365 4.44294 6.3424L2.77627 16.3424C2.36992 18.7805 4.25009 21 6.72185 21H17.2782C19.7499 21 21.6301 18.7805 21.2237 16.3424L19.5571 6.3424C19.2356 4.41365 17.5669 3 15.6115 3Z" stroke="#141718" stroke-width="1.5" stroke-linejoin="round" />
+                                    </svg>
+                                    <span class="prod-num">0</span>
+                                </div>
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Wishlist" />
+                                <div class="icons d-flex justify-content-between align-items-center">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6924 7.58373C12.3055 7.95505 11.6945 7.95505 11.3076 7.58373L10.6152 6.91927C9.80477 6.14154 8.70994 5.66667 7.5 5.66667C5.01472 5.66667 3 7.68139 3 10.1667C3 12.5493 4.28979 14.5167 6.15176 16.1332C8.01532 17.7511 10.2434 18.8241 11.5746 19.3717C11.853 19.4862 12.147 19.4862 12.4254 19.3717C13.7566 18.8241 15.9847 17.7511 17.8482 16.1332C19.7102 14.5167 21 12.5493 21 10.1667C21 7.68139 18.9853 5.66667 16.5 5.66667C15.2901 5.66667 14.1952 6.14154 13.3848 6.91927L12.6924 7.58373ZM12 5.47624C10.8321 4.35548 9.24649 3.66667 7.5 3.66667C3.91015 3.66667 1 6.57682 1 10.1667C1 16.5349 7.97034 20.0517 10.8138 21.2214C11.5796 21.5364 12.4204 21.5364 13.1862 21.2214C16.0297 20.0517 23 16.5349 23 10.1667C23 6.57682 20.0899 3.66667 16.5 3.66667C14.7535 3.66667 13.1679 4.35548 12 5.47624Z" fill="#141718" />
+                                    </svg>
+                                    <span class="prod-num">0</span>
+                                </div>
+                            </div>
+                            <a href="signIn.html">Sign In</a>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="2" y="2" width="20" height="20" rx="4" stroke="#141718" stroke-width="1.5" />
+                                    <circle cx="18" cy="6" r="1" fill="#141718" />
+                                    <circle cx="12" cy="12" r="5" stroke="#141718" stroke-width="1.5" />
+                                </svg>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 3H15C12.2386 3 10 5.23858 10 8V10H6V14H10V21H14V14H18V10H14V8C14 7.44772 14.4477 7 15 7H18V3Z" stroke="#141718" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="2" y="3" width="20" height="18" rx="4" stroke="#141718" stroke-width="1.5" />
+                                    <path d="M10.4472 8.72361L15.2111 11.1056C15.9482 11.4741 15.9482 12.5259 15.2111 12.8944L10.4472 15.2764C9.78231 15.6088 9 15.1253 9 14.382V9.61803C9 8.87465 9.78231 8.39116 10.4472 8.72361Z" stroke="#141718" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <button type="button" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvasRight" aria-controls="offcanvasRight" class="bg-transparent border border-0" id="cartIcon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 6L9 7C9 8.65685 10.3431 10 12 10C13.6569 10 15 8.65685 15 7V6" stroke="#141718" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M15.6115 3H8.38851C6.43316 3 4.7644 4.41365 4.44294 6.3424L2.77627 16.3424C2.36992 18.7805 4.25009 21 6.72185 21H17.2782C19.7499 21 21.6301 18.7805 21.2237 16.3424L19.5571 6.3424C19.2356 4.41365 17.5669 3 15.6115 3Z" stroke="#141718" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+
+                    <span class="prod-num">0</span>
+
+                </div>
+
+            </div>
+
+        </nav>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Cart</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="offcanvas-products" style="margin-bottom: 50px;">
+                </div>
+                <div class="d-flex justify-content-between align-items-center subtotal">
+                    <p>Subtotal</p>
+                    <h5></h5>
+                </div>
+                <div class="d-flex justify-content-between align-items-center total">
+                    <h4>Total</h4>
+                    <h4></h4>
+                </div>
+                <button class="checkout">Checkout</button>
+                <div class="view-cart">
+                    <a href="cart.html">View Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container header">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+            </ol>
+        </nav>
+        <h1>We believe in sustainable decor. We’re passionate about life at home.</h1>
+        <p>Our features timeless furniture, with natural fabrics, curved lines, plenty of mirrors and classic design, which can be incorporated into any decor project. The pieces enchant for their sobriety, to last for generations, faithful to the shapes of each period, with a touch of the present</p>
+    </div>
+    <div class="container feature-section d-flex flex-wrap">
+        <img src="assets/images/bannerImg.png" alt="" />
+        <div>
+            <h3 data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">About Us</h3>
+            <p data-aos="zoom-out" data-aos-delay="500" data-aos-duration="1200">
+                3legant is a gift & decorations store based in HCMC, Vietnam. Est since 2019.
+                Our customer service is always prepared to support you 24/7
+            </p>
+            <div>
+                <a href="">Shop Now</a>
+                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.16797 10.5H15.8346" stroke="#121212" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M10.832 15.5L15.832 10.5" stroke="#121212" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M10.832 5.5L15.832 10.5" stroke="#121212" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="container contact-section">
+        <h2 class="text-center">Contact Us</h2>
+        <div class="d-flex justify-content-between align-items-center text-center flex-wrap">
+            <div data-aos="fade-right" data-aos-delay="400" data-aos-duration="1500">
+                <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M27.4974 16V24C27.4974 26.9455 25.1096 29.3333 22.1641 29.3333H11.4974C8.55188 29.3333 6.16406 26.9455 6.16406 24V16" stroke="#141718" stroke-width="2.5" stroke-linejoin="round" />
+                    <path d="M23.1906 2.66663H10.474C8.05084 2.66663 5.87183 4.3263 4.9719 6.85736L3.96126 9.69979C3.65533 10.5602 3.44386 11.4809 3.66699 12.3665C4.19545 14.4636 5.90996 16 7.94342 16C10.398 16 12.3879 13.7614 12.3879 11C12.3879 13.7614 14.3777 16 16.8323 16C19.2869 16 21.2768 13.7614 21.2768 11C21.2768 13.7614 23.2666 16 25.7212 16C27.7547 16 29.4692 14.4636 29.9976 12.3665C30.2208 11.4809 30.0093 10.5602 29.7034 9.69979L28.6927 6.85735C27.7928 4.3263 25.6138 2.66663 23.1906 2.66663Z" stroke="#141718" stroke-width="2.5" stroke-linejoin="round" />
+                    <path d="M12.832 25.3334C12.832 23.1242 14.6229 21.3334 16.832 21.3334C19.0412 21.3334 20.832 23.1242 20.832 25.3334V29.3334H12.832V25.3334Z" stroke="#141718" stroke-width="2.5" stroke-linejoin="round" />
+                </svg>
+                <span>Address</span>
+                <p>234 Hai Trieu, Ho Chi Minh City,Viet Nam</p>
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="800" data-aos-duration="1700">
+                <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M28.5 25.3333V23.1388C28.5 22.0483 27.8361 21.0678 26.8237 20.6628L24.1115 19.5779C22.8238 19.0629 21.3563 19.6208 20.736 20.8613L20.5 21.3333C20.5 21.3333 17.1667 20.6667 14.5 18C11.8333 15.3333 11.1667 12 11.1667 12L11.6387 11.764C12.8792 11.1437 13.4371 9.67618 12.9221 8.38848L11.8372 5.67629C11.4322 4.66387 10.4517 4 9.36125 4H7.16667C5.69391 4 4.5 5.19391 4.5 6.66667C4.5 18.4487 14.0513 28 25.8333 28C27.3061 28 28.5 26.8061 28.5 25.3333Z" stroke="#141718" stroke-width="2.5" stroke-linejoin="round" />
+                </svg>
+                <span>Contact Us</span>
+                <p>+84 234 567 890</p>
+            </div>
+            <div data-aos="fade-left" data-aos-delay="400" data-aos-duration="1500">
+                <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.16536 10.6667L13.207 14.0277C14.9984 15.222 17.3323 15.222 19.1238 14.0277L24.1654 10.6667M8.16536 28H24.1654C27.1109 28 29.4987 25.6122 29.4987 22.6667V9.33333C29.4987 6.38781 27.1109 4 24.1654 4H8.16536C5.21985 4 2.83203 6.38781 2.83203 9.33333V22.6667C2.83203 25.6122 5.21985 28 8.16536 28Z" stroke="#141718" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span>Email</span>
+                <p>hello@3legant.com</p>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between flex-wrap">
+            <div>
+                <form class="row g-4">
+                    <div class="col-12">
+                        <label for="fName" class="form-label">FULL NAME</label>
+                        <input type="text" class="form-control" id="fName" placeholder="Full Name">
+                    </div>
+                    <div class="col-12">
+                        <label for="eAddress" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="eAddress" placeholder="Your Email">
+                    </div>
+                    <div class="col-12">
+                        <label for="message" class="form-label">MESSAGE</label>
+                        <textarea class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </div>
+                </form>
+            </div>
+            
+            <div>
+                <img src="assets/images/map.jpg" alt="" />
+                <img src="assets/images/location.png" alt="" id="location"/>
+            </div>
+        </div>
+    </div>
+    <div class="values d-flex flex-wrap">
+        <div>
+            <img src="assets/images/fast delivery.png" alt="" />
+            <h6>Free Shipping</h6>
+            <span>Order above $200</span>
+        </div>
+        <div>
+            <img src="assets/images/money.png" alt="" />
+            <h6>Money-back</h6>
+            <span>30 days guarantee</span>
+        </div>
+        <div>
+            <img src="assets/images/lock.png" alt="" />
+            <h6>Secure Payments</h6>
+            <span>Secured by Stripe</span>
+        </div>
+        <div>
+            <img src="assets/images/call.png" alt="" />
+            <h6>24/7 Support</h6>
+            <span>Phone and Email support</span>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center footer-content">
+                <div class="d-flex align-items-center">
+                    <h4>3legant.</h4>
+                    <span>|</span>
+                    <p>Gift & Decoration Store</p>
+                </div>
+                <div class="d-flex align-items-center">
+                    <div><a href="home1.html">Home</a></div>
+                    <div><a href="shop1.html">Shop</a></div>
+                    <div><a href="product.html">Product</a></div>
+                    <div><a href="blog.html">Blog</a></div>
+                    <div><a href="contactUs.html">Contact Us</a></div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center bottom-bar">
+                <div class="d-flex align-items-center">
+                    <p>Copyright � 2023 3legant. All rights reserved</p>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+                <div class="d-flex align-items-center">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2" y="2" width="20" height="20" rx="4" stroke="#FEFEFE" stroke-width="1.5" />
+                        <circle cx="18" cy="6" r="1" fill="#FEFEFE" />
+                        <circle cx="12" cy="12" r="5" stroke="#FEFEFE" stroke-width="1.5" />
+                    </svg>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 3H15C12.2386 3 10 5.23858 10 8V10H6V14H10V21H14V14H18V10H14V8C14 7.44772 14.4477 7 15 7H18V3Z" stroke="#FEFEFE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2" y="3" width="20" height="18" rx="4" stroke="#FEFEFE" stroke-width="1.5" />
+                        <path d="M10.4472 8.72361L15.2111 11.1056C15.9482 11.4741 15.9482 12.5259 15.2111 12.8944L10.4472 15.2764C9.78231 15.6088 9 15.1253 9 14.382V9.61803C9 8.87465 9.78231 8.39116 10.4472 8.72361Z" stroke="#FEFEFE" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="package/swiper-element-bundle.min.js"></script>
+    <script src="package/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="bootstrap-5.3.6-dist\js\bootstrap.bundle.min.js"></script>
+    <script src="bootstrap-5.3.6-dist\js\bootstrap.bundle.js"></script>
+    <script src="assets/jScript.js"></script>
+    <script src="assets/contactUs/contactUs.js"></script>
+</body>
+</html>

@@ -1,0 +1,389 @@
+body > h1 {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.account-menu {
+    padding: 10px;
+    background-color: #F3F5F7;
+    border-radius: 8px;
+    width: 390px;
+}
+
+    .account-menu > div:first-of-type {
+        position: relative;
+        padding: 40px;
+    }
+
+        .account-menu > div:first-of-type > img {
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+        }
+
+        .account-menu > div:first-of-type > svg {
+            position: absolute;
+            bottom: 40%;
+            right: 28%;
+            cursor: pointer;
+            transition: 0.2s linear;
+        }
+
+            .account-menu > div:first-of-type > svg:hover {
+                transform: scale(1.2);
+            }
+
+            .account-menu > div:first-of-type h3 {
+                margin-top: 15px;
+            }
+
+
+    .account-menu > div:last-of-type span {
+        margin-bottom: 20px;
+        display: block;
+        color: #6C7275;
+        font-weight: 500;
+        padding-bottom: 5px;
+        cursor: pointer;
+    }
+
+        .account-menu > div:last-of-type span a {
+            color: #6C7275;
+            font-weight: 500;
+        }
+
+        .account-menu > div:last-of-type span.active {
+            position: relative;
+            color: #141718;
+        }
+
+        .account-menu > div:last-of-type span::after {
+            content: '';
+            position: absolute;
+            top: 30px;
+            left: 0;
+            height: 2px;
+            width: 0;
+            background-color: #141718;
+        }
+
+        .account-menu > div:last-of-type span.active::after {
+            width: 100%;
+        }
+
+    .account-menu > div:last-of-type a {
+        text-decoration: none;
+    }
+
+body > div:nth-child(3) {
+    gap: 70px;
+}
+
+.account-details {
+    display: none;
+}
+
+    .account-details.active {
+        display: block;
+    }
+
+.address,
+.orders,
+.account,
+.wishlist {
+    width: calc(100% - 70px);
+}
+
+    .address > div {
+        gap: 15px;
+    }
+
+        .address > div > div {
+            padding: 10px 20px;
+            border-radius: 8px;
+            border: 1px solid #6C7275;
+            width: 50%;
+        }
+
+            .address > div > div svg {
+                cursor: pointer;
+                transition: 0.2s linear;
+            }
+
+                .address > div > div svg > path {
+                    transition: 0.2s linear;
+                }
+
+                .address > div > div svg:hover {
+                    fill: #5f8137;
+                    transform: scale(1.2);
+                }
+
+                    .address > div > div svg:hover > path:last-of-type {
+                        fill: #5f8137;
+                    }
+
+            .address > div > div > div:first-of-type {
+                margin-bottom: 15px;
+            }
+
+            .address > div > div p:first-of-type {
+                margin-bottom: 7px;
+                margin-top: 7px;
+            }
+
+    .account label {
+        color: #6C7275;
+        font-weight: 700;
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .account > div:nth-child(4) > div {
+        margin-bottom: 6px !important;
+    }
+
+    .account > div:nth-child(4) {
+        margin-bottom: 15px;
+    }
+
+        .account > div:nth-child(4) span {
+            color: #6C7275;
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+    .account > button {
+        padding: 12px 40px;
+        border-radius: 8px;
+        background-color: #141718;
+        border: none;
+        color: white;
+        font-weight: 500;
+        font-size: 16px
+    }
+
+    .orders > div {
+        width: 100%;
+    }
+
+.account-details > div table {
+    table-layout: fixed;
+}
+
+    .account-details > div table tr:first-of-type th {
+        color: #6C7275;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .account-details > div table tbody tr {
+        height: 70px;
+        vertical-align: middle;
+    }
+
+.account-details > h3 {
+    margin-bottom: 30px;
+}
+
+.account > h3:last-of-type {
+    margin-top: 20px;
+}
+
+
+.wishlist table tbody img {
+    height: 90px;
+    width: 90px;
+}
+
+.wishlist table tbody button {
+    background-color: #141718;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 24px;
+    color: #FEFEFE;
+    font-weight: 500;
+    transition: 0.2s linear;
+}
+
+    .wishlist table tbody button:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 3px 5px 2px #acba9c;
+        background-color: #8bbb52;
+    }
+
+.wishlist table tbody svg {
+    cursor: pointer;
+}
+
+    .wishlist table tbody svg path {
+        transition: 0.2s ease-out;
+    }
+
+    .wishlist table tbody svg:hover path {
+        fill: red;
+        transform: scale(1.2);
+    }
+
+.account-menu select {
+    background-color: transparent;
+    border-radius: 8px;
+    border: 2px solid #6C7275;
+    padding: 8px;
+    width: 100%;
+    display: none;
+    margin-bottom: 30px;
+}
+
+
+@media (min-width: 500px) {
+
+    .account-menu > div:first-of-type > svg {
+        position: absolute;
+        bottom: 40%;
+        right: 37%;
+    }
+}
+
+@media (min-width: 370px) and (max-width: 500px) {
+
+    .account-menu > div:first-of-type > svg {
+        position: absolute;
+        bottom: 40%;
+        right: 35%;
+    }
+
+}
+
+
+@media(min-width: 320px) and (max-width: 740px) {
+
+    .address > div {
+        flex-wrap: wrap;
+    }
+
+        .address > div > * {
+            width: 100% !important;
+            margin-bottom: 15px;
+        }
+
+    .account-menu .account-list {
+        display: none;
+    }
+
+    .account-menu select {
+        display: block;
+    }
+
+    body > div:nth-child(3) {
+        flex-wrap: wrap;
+    }
+
+        body > div:nth-child(3) > * {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+}
+
+@media(min-width: 320px) and (max-width: 990px) {
+    .account-details > div table thead tr > th:nth-child(2),
+    .account-details > div table thead tr > th:nth-child(3) {
+        display: none;
+    }
+
+    .account-details > div table,
+    .account-details > div table tbody,
+    .account-details > div table tbody tr,
+    .account-details > div table tbody td {
+        display: block;
+        width: 100%;
+    }
+
+        
+        .account-details > div table tbody td {
+            border-bottom: none;
+        }
+   
+
+
+        .account-details > div table tbody tr {
+            position: relative;
+            height: 150px;
+        }
+
+        .account-details > div table tbody tr button {
+            position: absolute;
+            bottom: 5px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+            .wishlist > div table tbody tr > td:nth-child(2) {
+                display: none;
+            }
+
+        .account-details > div table tbody tr {
+            border-bottom: 2px solid #E8ECEF;
+        }
+
+        .account-details > div table tbody tr > td:first-of-type {
+            padding-top: 7px;
+            padding-bottom: 7px;
+            border-bottom: none;
+        }
+
+            .account-details > div table tbody tr > td:first-of-type > div > div {
+                position: relative;
+            }
+
+                .account-details > div table tbody tr > td:first-of-type > div > div::after {
+                    content: attr(data-price);
+                    position: absolute;
+                    left: 2px;
+                    top: 55px;
+                }
+
+    .orders table thead tr {
+        display: none !important;
+    }
+
+    .orders table,
+    .orders table tbody,
+    .orders table tbody tr,
+    .orders table tbody tr td {
+        display: inline-block;
+        width: 100%;
+    }
+
+        .orders table tbody tr td {
+            position: relative;
+            text-align: right;
+            padding-left: 50%;
+        }
+
+            .orders table tbody tr td::before {
+                content: attr(data-label);
+                position: absolute;
+                color: #6C7275;
+                left: 0;
+                width:50%;
+                text-align: start;
+            }
+
+
+}
+
+@media(min-width: 740px) and (max-width: 770px) {
+
+    .wishlist > div table tbody tr h6 {
+        margin-bottom: 0;
+    }
+    .wishlist > div table tbody tr h6 {
+        margin-bottom: 2px;
+    }
+
+    .wishlist > div table tbody tr > td:first-of-type > div > div::after {
+        top: 65px;
+    }
+
+}

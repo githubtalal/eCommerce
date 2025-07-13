@@ -1,0 +1,308 @@
+nav[aria-label="breadcrumb"] a {
+    text-decoration: none;
+    color: gray;
+}
+
+nav[aria-label="breadcrumb"] li.active {
+    color: #200b0b;
+}
+
+.product-loop > div:last-of-type > div:nth-child(2) > div:nth-child(5) > div > div {
+    width: 20%;
+}
+
+    .product-loop > div:last-of-type > div:nth-child(2) > div:nth-child(5) > div > div .amount {
+        background-color: #efefef;
+        font-size: 18px;
+        font-weight: 500;
+        width: 46%;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        border-radius: 40%;
+    }
+
+    .product-loop > div:last-of-type > div:nth-child(2) > div:nth-child(5) > div > div .adjustQty {
+        background-color: #363f41;
+        user-select: none;
+        border: none;
+        border-radius: 50%;
+        height: 35px;
+        width: 35px;
+        line-height: 30px;
+        color: #FEFEFE;
+        font-weight: 500;
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+
+.product-loop > div:last-of-type > div:first-of-type {
+    margin-right: 30px;
+}
+
+    .product-loop > div:last-of-type > div:first-of-type > div {
+        margin-bottom: 30px;
+    }
+
+        .product-loop > div:last-of-type > div:first-of-type > div > div {
+            margin-right: 30px;
+        }
+
+            .product-loop > div:last-of-type > div:first-of-type > div > div:first-of-type {
+                position: relative;
+            }
+
+                .product-loop > div:last-of-type > div:first-of-type > div > div:first-of-type > div {
+                    position: absolute;
+                    top: 20px;
+                    left: 20px;
+                }
+
+                    .product-loop > div:last-of-type > div:first-of-type > div > div:first-of-type > div > *:first-of-type {
+                        background-color: white;
+                        width: 50px;
+                        color: #211818;
+                        font-weight: 600;
+                        margin-bottom: 5px;
+                        border-radius: 4px;
+                    }
+
+                    .product-loop > div:last-of-type > div:first-of-type > div > div:first-of-type > div > *:last-of-type {
+                        background-color: #38CB89;
+                        color: white;
+                        font-weight: 600;
+                        width: 50px;
+                        border-radius: 4px;
+                    }
+
+.product-loop > div:last-of-type > div:last-of-type > div:first-of-type > div:first-of-type {
+    width: 26%
+}
+
+.product-loop > div:last-of-type > div:last-of-type > div:first-of-type > div:first-of-type {
+    margin-bottom: 30px;
+}
+
+.product-loop > div:last-of-type > div:last-of-type > div:first-of-type p {
+    color: #6C7275;
+}
+
+.product-loop > div:last-of-type > div:last-of-type > div:first-of-type > div:last-of-type h5 {
+    margin-right: 15px;
+}
+
+.product-loop > div:last-of-type > div:last-of-type > div:first-of-type > div:last-of-type span {
+    text-decoration: line-through;
+    color: #6C7275;
+}
+
+.product-loop > div:last-of-type > div:nth-child(2) > div:nth-child(4) {
+    margin-top: 20px;
+}
+
+    .product-loop > div:last-of-type > div:nth-child(2) > div:nth-child(4) > div > div.active {
+        border: 1px solid #141718;
+    }
+
+    .product-loop > div:last-of-type > div:nth-child(2) > div:nth-child(4) > div > div {
+        cursor: pointer;
+        transition: all 0.2s linear;
+        margin-right: 10px;
+    }
+
+        .product-loop > div:last-of-type > div:nth-child(2) > div:nth-child(4) > div > div:hover {
+            box-shadow: 5px 5px 8px 0.7px #cad2d5;
+            transform: translateY(-3px);
+        }
+
+    .product-loop > div:last-of-type > div:nth-child(2) > div:nth-child(4) p:first-of-type {
+        margin-bottom: 7px;
+        color: #6C7275;
+    }
+
+    .product-loop > div:last-of-type > div:nth-child(2) > div:nth-child(4) span {
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    .product-loop > div:last-of-type > div:nth-child(2) > div:nth-child(4) p:last-of-type {
+        margin-top: -10px;
+    }
+
+.product-loop > div:last-of-type > div:nth-child(2) > div:nth-child(5) {
+    margin-top: 30px;
+}
+
+    .product-loop > div:last-of-type > div:nth-child(2) > div:nth-child(5) > div button {
+        background-color: transparent;
+        width: 60%;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        border-radius: 8px
+    }
+
+        .product-loop > div:last-of-type > div:nth-child(2) > div:nth-child(5) > div button svg.active {
+            fill: #211818;
+        }
+
+        .product-loop > div:last-of-type > div:nth-child(2) > div:nth-child(5) > div button,
+        .product-loop > div:last-of-type > div:nth-child(2) > div:nth-child(5) > div button svg {
+            transition: all 0.3s ease-out;
+        }
+
+            .product-loop > div:last-of-type > div:nth-child(2) > div:nth-child(5) > div button:hover {
+                transform: translateY(-2px);
+            }
+
+                .product-loop > div:last-of-type > div:nth-child(2) > div:nth-child(5) > div button:hover svg {
+                    fill: #000000;
+                }
+
+    .product-loop > div:last-of-type > div:nth-child(2) > div:nth-child(5) > div {
+        margin-bottom: 20px;
+    }
+
+        .product-loop > div:last-of-type > div:nth-child(2) > div:nth-child(5) > div button span {
+            margin-left: 7px;
+            font-size: 17px;
+        }
+
+
+    .product-loop > div:last-of-type > div:nth-child(2) > div:nth-child(5) > button {
+        width: 100%;
+        background-color: #141718;
+        border-radius: 8px;
+        color: #FFFFFF;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border: none;
+        font-weight: 500;
+        transition: 0.3s linear;
+    }
+
+        .product-loop > div:last-of-type > div:nth-child(2) > div:nth-child(5) > button:hover {
+            transform: translateY(-5px);
+            background-color: #179044;
+            color: #421c1c;
+        }
+
+.product-loop > div:last-of-type > div:nth-child(2) > div:nth-child(6) {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+    .product-loop > div:last-of-type > div:nth-child(2) > div:nth-child(6) > div {
+        width: 50%;
+    }
+
+        .product-loop > div:last-of-type > div:nth-child(2) > div:nth-child(6) > div > span:first-of-type {
+            color: #6C7275;
+        }
+
+        .product-loop > div:last-of-type > div:nth-child(2) > div:nth-child(6) > div > span:last-of-type {
+            color: #141718;
+        }
+
+.product-loop > div:last-of-type > div:nth-child(2) > div:nth-child(5) h6 {
+    color: #6C7275;
+}
+
+.product-loop > div:last-of-type > div:nth-child(2) > div:nth-child(5) p {
+    color: #141718;
+}
+
+.product-loop > div:last-of-type > div:last-of-type hr {
+    margin-top: 30px;
+}
+
+.product-loop > div:last-of-type > div:last-of-type .timer {
+    margin-top: 30px;
+}
+
+    .product-loop > div:last-of-type > div:last-of-type .timer p {
+        font-size: 20px;
+    }
+
+    .product-loop > div:last-of-type > div:last-of-type .timer h1 {
+        background-color: #F3F5F7;
+        padding: 15px;
+    }
+
+    .product-loop > div:last-of-type > div:last-of-type .timer > div p {
+        color: #6C7275;
+        text-align: center;
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    .product-loop > div:last-of-type > div:last-of-type .timer > div {
+        gap: 20px;
+    }
+
+    .mySwiper1 {
+        margin-top: 20px;
+    }
+
+@media(min-width: 320px) and (max-width: 1200px) {
+
+    .product-loop > div:last-of-type > div:nth-child(2) > div:nth-child(5) > div > div {
+        width: 32%;
+    }
+
+    .product-loop > nav {
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    .product-loop > div:first-of-type {
+        display: block !important;
+    }
+
+        .product-loop > div:first-of-type .swiper-slide,
+        .product-loop > div:first-of-type .swiper-wrapper {
+            height: auto;
+        }
+
+
+            .product-loop > div:first-of-type .swiper-slide img {
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+            }
+
+    .product-loop > div:last-of-type > div:first-of-type {
+        display: none;
+    }
+
+    .product-loop > div:last-of-type {
+        flex-wrap: wrap;
+    }
+
+        .product-loop > div:last-of-type > * {
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        .product-loop > div:last-of-type > div:first-of-type > div {
+            flex-wrap: wrap;
+        }
+
+            .product-loop > div:last-of-type > div:first-of-type > div > * {
+                width: 100%;
+                margin-bottom: 30px;
+                margin-right: 0 !important;
+            }
+
+                .product-loop > div:last-of-type > div:first-of-type > div > * > img {
+                    width: 100%;
+                }
+
+        .product-loop > div:last-of-type > div:last-of-type > div:first-of-type > div:first-of-type {
+            width: 50%;
+        }
+
+
+        .product-loop > div:last-of-type > div:nth-child(2) > div:nth-child(6) > div {
+            width: 90%;
+        }
+}
