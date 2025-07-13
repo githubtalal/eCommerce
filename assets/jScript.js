@@ -115,6 +115,7 @@ window.onload = function () {
 
 function tagTheFavouriteProducts() {
     let favProductIds = JSON.parse(localStorage.getItem('favouriteProductIds'))
+    console.log(favProductIds)
     if (favProductIds.length !== 0) {
         document.querySelectorAll("svg.bi-heart").forEach(function (elem, index, arr) {
             if (favProductIds.includes(elem.id.split('-')[1])) {
