@@ -15,11 +15,6 @@
         font-weight: 500;
     }
 
-    .title > div {
-        width: 832px;
-        gap: 35px; 
-    }
-
     .title > div > div {
         cursor: pointer;
         position: relative;
@@ -27,7 +22,7 @@
 
 
     .title > div > div > p:first-of-type {
-        margin-right: 15px;
+        margin-right: 1px;
         border-radius: 50%;
         height: 45px;
         width: 45px;
@@ -427,14 +422,10 @@
 
 
     @media(max-width: 500px){
-        .title > div > div.visited {
-            display: none;
+
+        .cart-detail > div:first-of-type {
+            flex-wrap: wrap;
         }
-
-
-            .cart-detail > div:first-of-type {
-                flex-wrap: wrap;
-            }
 
         .cart-detail > div:first-of-type > * {
             width: 100%;
@@ -534,7 +525,47 @@
                 }
     }
 
+    @media(min-width: 320px) and (max-width: 500px) {
+        .title {
+            width: 100%;
+        }
+
+        .title > div > div.visited {
+            display: none;
+        }
+
+        .title > div > div:not(.active) > * {
+            display: none !important;
+        }
+
+        .title > div > div.active + div > *:first-child {
+            display: inline-block !important;
+        }
+    }
+
+    @media (min-width: 500px) and (max-width: 770px) {
+        .title {
+            width: 100%;
+        }
+
+            .title > div > div.visited {
+                display: none;
+            }
+
+            
+            .title > div > div:not(.active):last-of-type{
+                display: none;
+            }
+
+            .title > div > div.active + div{
+                display: block !important;
+            }
+    }
+
     @media(min-width: 500px) and (max-width: 1200px){
+        .title {
+            width: 100%;
+        }
 
         .cart-detail > div:first-of-type {
             flex-wrap: wrap;
