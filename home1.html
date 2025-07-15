@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <link rel="stylesheet" href="package/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/home1Style.css" />
-    <link rel="stylesheet" href="assets/productStyle.css" />
     <link rel="stylesheet" href="bootstrap-5.3.6-dist\css\bootstrap.min.css" />
     <link rel="stylesheet" href="bootstrap-5.3.6-dist\css\bootstrap.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -42,13 +41,13 @@
                         </div>
                         <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="home1.html">Home</a>
+                                <a class="nav-link active" aria-current="page" href="home1.html">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="shop1.html">Shop</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="product.html">Product</a>
+                                <a class="nav-link" href="product.html">Product</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="contactUs.html">Contact Us</a>
@@ -109,8 +108,11 @@
                             <path d="M15.6115 3H8.38851C6.43316 3 4.7644 4.41365 4.44294 6.3424L2.77627 16.3424C2.36992 18.7805 4.25009 21 6.72185 21H17.2782C19.7499 21 21.6301 18.7805 21.2237 16.3424L19.5571 6.3424C19.2356 4.41365 17.5669 3 15.6115 3Z" stroke="#141718" stroke-width="1.5" stroke-linejoin="round" />
                         </svg>
                     </button>
+
                     <span class="prod-num">0</span>
+
                 </div>
+
             </div>
 
         </nav>
@@ -137,229 +139,62 @@
             </div>
         </div>
     </div>
-    <div class="product-loop container">
-        <nav style="--bs-breadcrumb-divider:'>';" aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Shop</a></li>
-                <li class="breadcrumb-item"><a href="#">Living Room</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Product</li>
-            </ol>
-        </nav>
+    <div class="container slider-section">
         <!-- Swiper -->
-        <div class="swiper firstSwipper d-none">
+        <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="assets/images/productImg1.png" alt="" />
+                    <img src="assets/images/coch.png" alt="" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="assets/images/productImg2.png" alt="" />
+                    <img src="assets/images/coch.png" alt="" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="assets/images/productImg3.png" alt="" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/productImg4.png" alt="" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/productImg5.png" alt="" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/productImg6.png" alt="" />
+                    <img src="assets/images/coch.png" alt="" />
                 </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next">
+                <img src="assets/images/right-arrow.png" alt="" />
+            </div>
+            <div class="swiper-button-prev">
+                <img src="assets/images/left-arrow.png" alt="" />
+            </div>
+            <div class="swiper-pagination"></div>
         </div>
-        <div class="d-flex justify-content-between">
+        <div class="row">
+            <h1 class="col-lg-8 col-md-6 col-sm-12">Simply Unique/Simply Better.</h1>
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-2"><h6>3legant</h6><span> is a gift & decorations store based in HCMC, Vietnam. Est since 2019. =</span></div>
+        </div>
+    </div>
+    <div class="container d-flex align-items-center banner-grid">
+        <div data-aos="fade-right" data-aos-delay="700">
+            <img src="assets/images/prod1.png" alt="" />
             <div>
-                <div class="d-flex justify-content-between" >
-                    <div>
-                        <img src="assets/images/productImg1.png" alt="" data-aos="flip-left" data-aos-duration="1200"/>
-                        <div class="text-center">
-                            <p data-aos="fade-left" data-aos-duration="2000" data-aos-delay="800">NEW</p>
-                            <p data-aos="fade-up" data-aos-duration="2500" data-aos-delay="1000">-50%</p>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="assets/images/productImg2.png" alt="" data-aos="flip-left" data-aos-duration="1200"/>
-                    </div>
+                <h4>Living Room</h4>
+                <div class="shop-link">
+                    <a href="shop1.html">Shop Now</a>
+                    <img src="assets/images/arrow-right.png" alt="" />
                 </div>
-                <div class="d-flex justify-content-between">
-                    <div>
-                        <img src="assets/images/productImg3.png" alt="" data-aos="flip-left" data-aos-duration="1200"/>
-                    </div>
-                    <div>
-                        <img src="assets/images/productImg4.png" alt="" data-aos="flip-left" data-aos-duration="1200"/>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <div>
-                        <img src="assets/images/productImg5.png" alt="" data-aos="flip-left" data-aos-duration="1200"/>
-                    </div>
-                    <div>
-                        <img src="assets/images/productImg6.png" alt="" data-aos="flip-left" data-aos-duration="1200"/>
+            </div>
+        </div>
+        <div class="d-flex flex-column justify-content-between">
+            <div data-aos="fade-left" data-aos-delay="700">
+                <img src="assets/images/prod2.png" alt="" />
+                <div>
+                    <h4>Bedroom</h4>
+                    <div class="shop-link">
+                        <a href="shop1.html">Shop Now</a>
+                        <img src="assets/images/arrow-right.png" alt="" />
                     </div>
                 </div>
             </div>
-            <div>
+            <div data-aos="fade-left" data-aos-delay="700">
+                <img src="assets/images/prod2.png" alt="" />
                 <div>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <img src="assets/images/Rating Group.png" alt="" />
-                        <span>11 Reviews</span>
-                    </div>
-                    <h2>Tray Table</h2>
-                    <p>Buy one or buy a few and make every space where you sit more convenient. Light and easy to move around with removable tray top, handy for serving snacks.</p>
-                    <div class="d-flex">
-                        <h5>$199.00</h5>
-                        <span>$400.00</span>
-                    </div>
-                </div>
-                <hr />
-                <div class="timer">
-                    <p>Offer expires in: </p>
-                    <div class="d-flex align-items-center text-center">
-                        <div>
-                            <h1 class="days">02</h1>
-                            <p>Days</p>
-                        </div>
-                        <div>
-                            <h1 class="hours">01</h1>
-                            <p>Hours</p>
-                        </div>
-                        <div>
-                            <h1 class="minutes">01</h1>
-                            <p>Minutes</p>
-                        </div>
-                        <div>
-                            <h1 class="seconds">10</h1>
-                            <p>Seconds</p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <p>Measurements</p>
-                    <span>17 1/2x20 5/8 "</span>
-                    <nav style="--bs-breadcrumb-divider:'>';" aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">Choose Color</a></li>
-                            <li class="breadcrumb-item"><a href="#"></a></li>
-                        </ol>
-                    </nav>
-                    <p>Black</p>
-                    <div class="d-flex">
-                        <div class="active">
-                            <img src="assets/images/prodColor1.png" alt="" id="10" />
-                        </div>
-                        <div>
-                            <img src="assets/images/prodColor2.png" alt="" id="12" />
-                        </div>
-                        <div>
-                            <img src="assets/images/prodColor3.png" alt="" id="13" />
-                        </div>
-                        <div>
-                            <img src="assets/images/prodColor4.png" alt="" id="14" />
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="d-flex justify-content-between">
-                        <div class="d-flex justify-content-between align-items-center text-center">
-                            <span class="minus adjustQty">-</span>
-                            <span class="amount">1</span>
-                            <span class="plus adjustQty">+</span>
-                        </div>
-                        <button>
-                            <svg fill="#a07878" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                 width="25px" height="25px" viewBox="0 0 475.528 475.528"
-                                 xml:space="preserve">
-                            <g>
-                            <g>
-                            <path d="M237.376,436.245l0.774,0.976c210.94-85.154,292.221-282.553,199.331-367.706
-			                                c-92.899-85.154-199.331,30.953-199.331,30.953h-0.774c0,0-106.44-116.107-199.331-30.953
-			                                C-54.844,154.658,26.437,351.092,237.376,436.245z" />
-
-
-
-
-
-
-
-	                                </g>
-                                </g>
-                            </svg>
-                            <span>Wishlist</span>
-                        </button>
-                    </div>
-                    <button>Add to Cart</button>
-                </div>
-                <div>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span>SKU</span>
-                        <span>1117</span>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span>CATEGORY</span>
-                        <span>Living Room, Bedroom</span>
-                    </div>
-                </div>
-                <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Additional Info
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <div>
-                                    <h6>Details</h6>
-                                    <p>You can use the removable tray for serving. The design makes it easy to put the tray back after use since you place it directly on the table frame without having to fit it into any holes.</p>
-                                </div>
-                                <div>
-                                    <h6>Packaging</h6>
-                                    <p>Width: 20 " Height: 1 ½ " Length: 21 ½ "<br />Weight: 7 lb 8 oz<br /> Package(s): 1</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Questions
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <div>
-                                    <h6>Details</h6>
-                                    <p>You can use the removable tray for serving. The design makes it easy to put the tray back after use since you place it directly on the table frame without having to fit it into any holes.</p>
-                                </div>
-                                <div>
-                                    <h6>Packaging</h6>
-                                    <p>Width: 20 " Height: 1 ½ " Length: 21 ½ "<br />Weight: 7 lb 8 oz<br /> Package(s): 1</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Reviews <span>(11)</span>
-                            </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <div>
-                                    <h6>Details</h6>
-                                    <p>You can use the removable tray for serving. The design makes it easy to put the tray back after use since you place it directly on the table frame without having to fit it into any holes.</p>
-                                </div>
-                                <div>
-                                    <h6>Packaging</h6>
-                                    <p>Width: 20 " Height: 1 ½ " Length: 21 ½ "<br />Weight: 7 lb 8 oz<br /> Package(s): 1</p>
-                                </div>
-                            </div>
-                        </div>
+                    <h4>Kitchen</h4>
+                    <div class="shop-link">
+                        <a href="prod3.html">Shop Now</a>
+                        <img src="assets/images/arrow-right.png" alt="" />
                     </div>
                 </div>
             </div>
@@ -367,7 +202,7 @@
     </div>
     <div class="container product-carousel">
         <div class="d-flex justify-content-between align-items-center">
-            <h3>You might also like</h3>
+            <h3>New Arrivals</h3>
             <div>
                 <a href="#">More Products</a>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="#000000" xmlns="http://www.w3.org/2000/svg">
@@ -450,7 +285,7 @@
                         <button data-num="3" class="add-btn">Add to cart</button>
                     </div>
                     <div class="prod-card-body">
-                        <img src="assets/images/Rating Group.png" alt="" />
+                        <img src="assets/images/Rating Group.png" alt=""/>
                         <h6 id="name-3">Beige Table Lamp</h6>
                         <div class="prod-price d-flex justify-content-between align-items-center">
                             <span id="price-3">$24.99</span>
@@ -540,6 +375,103 @@
             <div class="swiper-scrollbar"></div>
         </div>
     </div>
+    <div class="container d-flex justify-content-between align-items-center values">
+        <div data-aos="flip-left" data-aos-duration="2000" data-aos-delay="700">
+            <img src="assets/images/fast delivery.png" alt="" />
+            <h6>Free Shipping</h6>
+            <span>Order above $200</span>
+        </div>
+        <div data-aos="flip-right" data-aos-duration="2000" data-aos-delay="700">
+            <img src="assets/images/money.png" alt="" />
+            <h6>Money-back</h6>
+            <span>30 days guarantee</span>
+        </div>
+        <div data-aos="flip-left" data-aos-duration="2000" data-aos-delay="700">
+            <img src="assets/images/lock.png" alt="" />
+            <h6>Secure Payments</h6>
+            <span>Secured by Stripe</span>
+        </div>
+        <div data-aos="flip-right" data-aos-duration="2000" data-aos-delay="700">
+            <img src="assets/images/call.png" alt="" />
+            <h6>24/7 Support</h6>
+            <span>Phone and Email support</span>
+        </div>
+    </div>
+    <div class="banner d-flex justify-content-center">
+        <div>
+            <img src="assets/images/bannerImg.png" alt="" />
+        </div>
+        <div data-aos="fade-left" data-aos-duration="2000">
+            <span>SALE UP TO 35% OFF</span>
+            <h3>HUNDREDS of New lower prices!</h3>
+            <p>It�s more affordable than ever to give every room in your home a stylish makeover</p>
+            <div class="shop-link">
+                <a href="shop1.html">Shop Now</a>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.16666 10H15.8333" stroke="#141718" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M10.8333 15L15.8333 10" stroke="#141718" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M10.8333 5L15.8333 10" stroke="#141718" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="blog-section container">
+        <div class="d-flex justify-content-between align-items-center">
+            <h3>Articles</h3>
+            <div>
+                <a href="#">More Articles</a>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.16669 10H15.8333" stroke="#141718" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M10.8333 15L15.8333 10" stroke="#141718" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M10.8333 5L15.8333 10" stroke="#141718" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="article-card" data-aos="zoom-in-right" data-aos-duration="1000">
+                <div class="article-img">
+                    <img src="assets/images/articleImg1.png" alt="" />
+                </div>
+                <h5>7 ways to decor your home</h5>
+                <div>
+                    <a href="#">Read More</a>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.16669 10H15.8333" stroke="#141718" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M10.8333 15L15.8333 10" stroke="#141718" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M10.8333 5L15.8333 10" stroke="#141718" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+            <div class="article-card" data-aos="zoom-in-up" data-aos-duration="1000">
+                <div class="article-img">
+                    <img src="assets/images/articleImg2.png" alt="" />
+                </div>
+                <h5>Kitchen organization</h5>
+                <div>
+                    <a href="#">Read More</a>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.16669 10H15.8333" stroke="#141718" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M10.8333 15L15.8333 10" stroke="#141718" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M10.8333 5L15.8333 10" stroke="#141718" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+            <div class="article-card" data-aos="zoom-in-left" data-aos-duration="1000">
+                <div class="article-img">
+                    <img src="assets/images/articleImg3.png" alt="" />
+                </div>
+                <h5>Decor your bedroom</h5>
+                <div>
+                    <a href="#">Read More</a>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.16669 10H15.8333" stroke="#141718" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M10.8333 15L15.8333 10" stroke="#141718" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M10.8333 5L15.8333 10" stroke="#141718" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="newsLetter d-flex justify-content-center align-items-center">
         <div>
             <img src="assets/images/drawers.jpg" alt="" />
@@ -596,14 +528,16 @@
             </div>
         </div>
     </div>
+
     <script src="package/swiper-element-bundle.min.js"></script>
     <script src="package/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-    <script src="assets/jScript.js"></script>
     <script src="bootstrap-5.3.6-dist\js\bootstrap.bundle.min.js"></script>
     <script src="bootstrap-5.3.6-dist\js\bootstrap.bundle.js"></script>
+    <script src="assets/jScript.js"></script>
+
 </body>
 </html>
