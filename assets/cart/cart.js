@@ -85,16 +85,21 @@ document.querySelectorAll(".title > div > div").forEach(function (elem, index, a
             retrivePorductsIntoFirstSection()
             // adjust all products total and suptotal 
             adjustPorductsTotalAndSubtotalInCartList()
-
+            // edit the cart section title
+            editCartSectionTitle('Cart')
 
         } else if (this.id.split('-')[1] == 2) {
             retriveProductIntoSecondCartSection()
             // adjust total and suptotal of all products
             adjustPorductsTotalAndSubtotalInOrderSummary()
+            // edit the cart section title
+            editCartSectionTitle('Checkout')
         } else {
             // type the head the description of cart last page
             typeTheHeadAndDescMsgSmoothly()
 
+            // edit the cart section title
+            editCartSectionTitle('Completed!')
             retriveProductIntoThirdCartSection()
         }
     })
@@ -143,6 +148,9 @@ if (document.querySelector(".cart .cart-detail.active .product-list") !== null) 
     })
 }
 
+function editCartSectionTitle(title) {
+    document.querySelector(".title > h3").textContent = title
+}
 
 function typeTheHeadAndDescMsgSmoothly() {
     let thankMessage = 'Thank you! 🎉'
