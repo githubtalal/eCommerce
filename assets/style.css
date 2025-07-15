@@ -99,6 +99,7 @@ svg {
 @media(min-width: 320px) and (max-width: 402px) {
     .sign-up form > div:nth-child(5) label{
         margin-top: -40px;
+        margin-left: 20px; 
     }
 
     .sign-up input[type="checkbox"] {
