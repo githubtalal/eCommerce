@@ -96,10 +96,10 @@ svg {
     font-weight: 600;
 }
 
-@media(min-width: 310px) and (max-width: 408px) {
-    .sign-up form > div:nth-child(5) label{
+@media(min-width: 310px) and (max-width: 411px) {
+    .sign-up form > div:nth-child(5) label {
         margin-top: -40px;
-        margin-left: 20px; 
+        margin-left: 20px;
     }
 
     .sign-up input[type="checkbox"] {
