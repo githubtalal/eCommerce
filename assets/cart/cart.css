@@ -15,10 +15,14 @@
         font-weight: 500;
     }
 
-    .title > div > div {
-        cursor: pointer;
-        position: relative;
-    }
+        .title span {
+            vertical-align: middle;
+        }
+
+        .title > div > div {
+            cursor: pointer;
+            position: relative;
+        }
 
 
     .title > div > div > p:first-of-type {
@@ -33,7 +37,6 @@
     }
 
         .title > div > div > p:last-of-type {
-            margin-right: 25px;
             border-radius: 50%;
             height: 45px;
             width: 45px;
